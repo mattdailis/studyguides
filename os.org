@@ -1,12 +1,5 @@
 #+STARTUP: showall indent
 #+STARTUP: hidestars
-#+BEGIN_HTML
----
-layout: default
-title: OS Notes
-excerpt: These are some notes on OS
----
-#+END_HTML
 
 [[File Systems Exercises]]
 ** Memory management
