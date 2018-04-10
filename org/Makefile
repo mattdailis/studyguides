@@ -7,7 +7,7 @@ FILES=$(patsubst %.org,$(OUT_DIR)/%.md,$(wildcard *.org))
 all: install-doc
 
 install-doc: $(OUT_DIR) $(FILES)
-	bundle exec jekyll build --source $(OUT_DIR) 
+	bundle exec jekyll build --source $(OUT_DIR) --destination $(OUT_DIR)/_site
 
 $(OUT_DIR):
 	mkdir -v -p $(OUT_DIR)
