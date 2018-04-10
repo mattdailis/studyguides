@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>UC3M Study Guides | Study guides for Computer Science classes at UC3M Spring 2018.</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="UC3M Study Guides" />
+<meta name="author" content="Matt Dailis" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Study guides for Computer Science classes at UC3M Spring 2018." />
+<meta property="og:description" content="Study guides for Computer Science classes at UC3M Spring 2018." />
+<meta property="og:site_name" content="UC3M Study Guides" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Matt Dailis"},"description":"Study guides for Computer Science classes at UC3M Spring 2018.","@type":"WebPage","headline":"UC3M Study Guides","url":"/os.html","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1></h1>
+        <p>Study guides for Computer Science classes at UC3M Spring 2018.</p>
+
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. OS Notes and stuff</a>
+<ul>
+<li><a href="#sec-1-1">1.1. Memory management</a>
+<ul>
+<li><a href="#sec-1-1-1">1.1.1. Dynamic loading</a></li>
+<li><a href="#sec-1-1-2">1.1.2. Dynamic linking</a></li>
+<li><a href="#sec-1-1-3">1.1.3. Dynamic Storage-allocation</a></li>
+<li><a href="#sec-1-1-4">1.1.4. External Fragmentation:</a></li>
+<li><a href="#sec-1-1-5">1.1.5. Internal Fragmentation:</a></li>
+<li><a href="#sec-1-1-6">1.1.6. Segmentation</a></li>
+<li><a href="#sec-1-1-7">1.1.7. Memory map file (mmap)</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-2">1.2. File Systems Exercises</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<h1 id="os-notes-and-stuff">OS Notes and stuff<a id="sec-1" name="sec-1"></a></h1>
+
+<h2 id="memory-management">Memory management<a id="sec-1-1" name="sec-1-1"></a></h2>
+
+<h3 id="dynamic-loading">Dynamic loading<a id="sec-1-1-1" name="sec-1-1-1"></a></h3>
+
+<ul>
+  <li>Not the same thing as Dynamic Linking</li>
+</ul>
+
+<p>Routines are not loaded until they are called.</p>
+
+<h3 id="dynamic-linking">Dynamic linking<a id="sec-1-1-2" name="sec-1-1-2"></a></h3>
+
+<ul>
+  <li>Linking postponed until execution time. (Like .jar files)</li>
+  <li>Typically have a “stub” that is later (dynamically) replaced by the address of the routine to be run</li>
+  <li>Known as “Shared libraries”</li>
+</ul>
+
+<h3 id="dynamic-storage-allocation">Dynamic Storage-allocation<a id="sec-1-1-3" name="sec-1-1-3"></a></h3>
+
+<ol>
+  <li>
+    <p>First-fit</p>
+
+    <p>Very fast, allocate the first hole that is big enough</p>
+  </li>
+  <li>
+    <p>Best-fit</p>
+  </li>
+  <li>
+    <p>Worst-fit</p>
+
+    <p>Allocate largest hole</p>
+
+    <p>P1: 5k
+P2: 10k
+P3: 15k</p>
+
+    <p>2k, 4k, 9k
+p1, p2, p3</p>
+  </li>
+</ol>
+
+<h3 id="external-fragmentation">External Fragmentation:<a id="sec-1-1-4" name="sec-1-1-4"></a></h3>
+
+<ul>
+  <li>Regions of memory allocated with spaces inbetween</li>
+  <li>Total memory exists to satisfy request, but it is not continuous</li>
+</ul>
+
+<h3 id="internal-fragmentation">Internal Fragmentation:<a id="sec-1-1-5" name="sec-1-1-5"></a></h3>
+
+<ul>
+  <li>Too much space is given to each process</li>
+  <li>To fix, reduce the block size</li>
+</ul>
+
+<h3 id="segmentation">Segmentation<a id="sec-1-1-6" name="sec-1-1-6"></a></h3>
+
+<ul>
+  <li>A <strong>Segment</strong> is a logical unit such as:
+    <ul>
+      <li>Main program</li>
+      <li>procedure</li>
+      <li>function etc…</li>
+    </ul>
+  </li>
+  <li><strong>Segmentation</strong> is a memory management scheme</li>
+  <li><span class="underline">Logical address</span> consists of tuple
+    <ul>
+      <li>&lt; segment-number, offset &gt;</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="memory-map-file-mmap">Memory map file (mmap)<a id="sec-1-1-7" name="sec-1-1-7"></a></h3>
+
+<p>You can read/write/close a file
+OR: you can map a file to memory, and use that memory to access the file.</p>
+
+<h2 id="file-systems-exercises">File Systems Exercises<a id="sec-1-2" name="sec-1-2"></a></h2>
+
+<p><span class="timestamp-wrapper"><span class="timestamp">&lt;2018-04-10 Tue&gt;</span></span></p>
+
+<p><a href="os_materials/example-4b-filesystem-v1d.pdf">The pdf of the exercise</a></p>
+
+<p>Magic number identifies the file system type (must be in memory)</p>
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>
