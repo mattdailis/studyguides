@@ -1,1 +1,12 @@
+# Name of your blog (this will show up at the top of your page and in the RSS feed)
+name: UC3M Study Guides
+
+# Short description (goes below the title; it will also be used in the RSS feed)
+description: [Home](README.md)
+
+# Your name, as you want it to appear underneath each post and in the footer
+author: Your Name
+
+# Your email if you want it to be linked on the contact page
+author_email: you@example.com
 theme: jekyll-theme-minimal
