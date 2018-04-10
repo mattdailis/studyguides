@@ -14,13 +14,13 @@ $(OUT_DIR):
 
 %.md: %.org
 	emacs --batch --visit $< -f org-md-export-to-markdown --kill
-	mv $@ temp
-	touch $@
-	echo "---" >> $@
-	echo "layout: default" >> $@
-	echo "---" >> $@
-	cat temp >> $@
-	rm temp
+	# mv $@ temp
+	# touch $@
+	# echo "---" >> $@
+	# echo "layout: default" >> $@
+	# echo "---" >> $@
+	# cat temp >> $@
+	# rm temp
 
 $(OUT_DIR)/%.md: %.md
 # install -v -m 644 -t $(OUT_DIR) $<
