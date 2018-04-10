@@ -4,4 +4,12 @@ These are my study materials for my classes at UC3M, Spring 2018.
 
 [[file:os.org][OS notes]]
 
-[[file:os_materials][Folder with materials]]
+** Exam Dates
+
+| Class                    | Date   |
+|--------------------------+--------|
+| Security Engineering     | May 28 |
+| Artificial intelligence  | May 29 |
+| Software Dev             | May 30 |
+| Distributed Systems      | May 30 |
+| Operating Systems Design | May 31 |
