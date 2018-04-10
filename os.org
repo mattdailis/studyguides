@@ -1,0 +1,60 @@
+#+STARTUP: showall indent
+#+STARTUP: hidestars
+#+BEGIN_HTML
+---
+layout: default
+title: OS Notes
+excerpt: These are some notes on OS
+---
+#+END_HTML
+
+[[File Systems Exercises]]
+** Memory management
+*** Dynamic loading
+- Not the same thing as Dynamic Linking
+Routines are not loaded until they are called.
+*** Dynamic linking
+- Linking postponed until execution time. (Like .jar files)
+- Typically have a "stub" that is later (dynamically) replaced by the address of the routine to be run
+- Known as "Shared libraries"
+*** Dynamic Storage-allocation
+**** First-fit
+Very fast, allocate the first hole that is big enough
+**** Best-fit
+
+**** Worst-fit
+Allocate largest hole
+
+
+P1: 5k
+P2: 10k
+P3: 15k
+
+2k, 4k, 9k
+p1, p2, p3
+
+*** External Fragmentation:
+  - Regions of memory allocated with spaces inbetween
+  - Total memory exists to satisfy request, but it is not continuous
+*** Internal Fragmentation:
+  - Too much space is given to each process
+  - To fix, reduce the block size
+
+*** Segmentation
+- A *Segment* is a logical unit such as:
+  - Main program
+  - procedure
+  - function etc...
+- *Segmentation* is a memory management scheme
+- _Logical address_ consists of tuple
+    - < segment-number, offset >
+
+*** Memory map file (mmap)
+You can read/write/close a file
+OR: you can map a file to memory, and use that memory to access the file.
+** File Systems Exercises
+<2018-04-10 Tue>
+
+[[file:os_materials/example-4b-filesystem-v1d.pdf][The pdf of the exercise]]
+
+Magic number identifies the file system type (must be in memory)
