@@ -10,6 +10,7 @@
 These are my study materials for my classes at UC3M, Spring 2018.
 
 [OS notes](os.md)
+
 [AI notes](ai.md)
 
 # Exam Dates<a id="sec-1" name="sec-1"></a>
