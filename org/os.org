@@ -50,6 +50,6 @@ OR: you can map a file to memory, and use that memory to access the file.
 ** File Systems Exercises
 <2018-04-10 Tue>
 
-[[file:os_materials/example-4b-filesystem-v1d.pdf][The pdf of the exercise]]
+[[file:os_materials/example-4b-filesystem-v1d.pdf#page=2][The pdf of the exercise]]
 
 Magic number identifies the file system type (must be in memory)

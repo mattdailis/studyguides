@@ -87,6 +87,6 @@ OR: you can map a file to memory, and use that memory to access the file.
 
 <span class="timestamp-wrapper"><span class="timestamp">&lt;2018-04-10 Tue&gt;</span></span>
 
-[The pdf of the exercise](os_materials/example-4b-filesystem-v1d.pdf)
+[The pdf of the exercise](os_materials/example-4b-filesystem-v1d.pdf#page=2)
 
 Magic number identifies the file system type (must be in memory)

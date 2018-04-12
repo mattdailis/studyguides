@@ -19,11 +19,11 @@
 
 # Reasoning Under Uncertainty<a id="sec-1" name="sec-1"></a>
 
-[Bayesian Slides](file:///Users/matt/studyguides/ai_materials/slides/midterm2/bayesian-slides.pdf#page=2)
+[Bayesian Slides](file:///Users/matt/studyguides/ai_materials/slides/midterm2/bayesian-slides.pdf)
 
 ## Probabilistic Reasoning<a id="sec-1-1" name="sec-1-1"></a>
 
-[Bayesian Slides Probability](file:///Users/matt/studyguides/ai_materials/slides/midterm2/bayesian-slides.pdf#page=11)
+[Bayesian Slides Probability](file:///Users/matt/studyguides/ai_materials/slides/midterm2/bayesian-slides.pdf)
 
 **Probility** is the proportion of times something is true, 
 or a degree of belief in something

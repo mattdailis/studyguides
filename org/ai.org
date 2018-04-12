@@ -1,9 +1,9 @@
 #+TITLE: Midterm Units
 * Reasoning Under Uncertainty
-  [[file:~/studyguides/ai_materials/slides/midterm2/bayesian-slides.pdf#page=2][Bayesian Slides]]
+  [[file:~/studyguides/ai_materials/slides/midterm2/bayesian-slides.pdf][Bayesian Slides]]
 
 ** Probabilistic Reasoning
-   [[file:~/studyguides/ai_materials/slides/midterm2/bayesian-slides.pdf#page=11][Bayesian Slides Probability]]
+   [[file:~/studyguides/ai_materials/slides/midterm2/bayesian-slides.pdf][Bayesian Slides Probability]]
 
    *Probility* is the proportion of times something is true, 
    or a degree of belief in something
