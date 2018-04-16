@@ -1,73 +1,71 @@
 #+TITLE: Midterm Units
 * Reasoning Under Uncertainty
   [[file:ai_materials/slides/midterm2/bayesian-slides.pdf][Bayesian Slides]]
+* Probabilistic Reasoning
 
+** Probabilities
 
-** Probabilistic Reasoning
+     [[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=11][Bayesian Slides Probability]]
 
-*** Probabilities
+*** Definitions
 
-      [[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=11][Bayesian Slides Probability]]
+**** Basics
+    - *Probility* is the proportion of times something is true, 
+    or a degree of belief in something
 
-**** Definitions
+    - Probabilities range in value from *0* to *1*.
 
-***** Basics
-     - *Probility* is the proportion of times something is true, 
-     or a degree of belief in something
+    - A *random variable* can take on values on a given *domain*.
 
-     - Probabilities range in value from *0* to *1*.
+    - Since the value of the random variable is unknown, we assign a *probability* to each value.
 
-     - A *random variable* can take on values on a given *domain*.
+      - This set of probabilities defines a *probability distribution*.
 
-     - Since the value of the random variable is unknown, we assign a *probability* to each value.
+    - The *sample space* is the domain of a random variable.
 
-       - This set of probabilities defines a *probability distribution*.
+    - An *atomic event* is a possible situation.
 
-     - The *sample space* is the domain of a random variable.
-
-     - An *atomic event* is a possible situation.
-
-     - A *[[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=24][joint probability distribution]]* is the vector distribution of 
-       several different random variables.
+    - A *[[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=24][joint probability distribution]]* is the vector distribution of 
+      several different random variables.
       
-       - The distribution itself is ~P(X, Y, Ø)~
+      - The distribution itself is ~P(X, Y, Ø)~
 
-       - The atomic situation is ~P(X = 1, Y = 2, Ø = 3)~, which reads
-	 "X = 1 AND Y = 2 AND Ø"
+      - The atomic situation is ~P(X = 1, Y = 2, Ø = 3)~, which reads
+	"X = 1 AND Y = 2 AND Ø"
 
-     - An *a priori* or *unconditional* does not depend on any condition
+    - An *a priori* or *unconditional* does not depend on any condition
 
-   * Conditional Probability
-    
- # #+BEGIN_EXPORT html
- # <a href="https://www.codecogs.com/eqnedit.php?latex=P(A|B)&space;=&space;\frac{P(A,&space;B))}{P(B))}&space;\textrm{&space;if&space;}&space;P(B)&space;\neq&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(A|B)&space;=&space;\frac{P(A,&space;B))}{P(B))}&space;\textrm{&space;if&space;}&space;P(B)&space;\neq&space;0" title="P(A|B) = \frac{P(A, B))}{P(B))} \textrm{ if } P(B) \neq 0" /></a>
- # #+END_EXPORT
+# #+BEGIN_EXPORT html
+# <a href="https://www.codecogs.com/eqnedit.php?latex=P(A|B)&space;=&space;\frac{P(A,&space;B))}{P(B))}&space;\textrm{&space;if&space;}&space;P(B)&space;\neq&space;0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?P(A|B)&space;=&space;\frac{P(A,&space;B))}{P(B))}&space;\textrm{&space;if&space;}&space;P(B)&space;\neq&space;0" title="P(A|B) = \frac{P(A, B))}{P(B))} \textrm{ if } P(B) \neq 0" /></a>
+# #+END_EXPORT
 
-**** Law of total probability
- #+BEGIN_SRC
-    P(B) =  ∑P(B,Ai) over all possible Ai 
-         =  ∑P(B|Ai)P(Ai) over all possible Ai
- #+END_SRC
+*** Law of total probability
+#+BEGIN_SRC
+   P(B) =  ∑P(B,Ai) over all possible Ai 
+        =  ∑P(B|Ai)P(Ai) over all possible Ai
+#+END_SRC
 
-**** [[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=35][Conditional Probability]]
- #+BEGIN_SRC
-    P(A|B) =  P(A, B) / P(B) if P(B) =/= 0
- #+END_SRC
- Intuitively, =A | B= exists in the world of B: so =P(B) = 1= in this world.
+*** [[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=35][Conditional Probability]]
+#+BEGIN_SRC
+   P(A|B) =  P(A, B) / P(B) if P(B) =/= 0
+#+END_SRC
+Intuitively, =A | B= exists in the world of B: so =P(B) = 1= in this world.
 
- Thus, the probability of the intersection =P(A, B)= (read A *and* B) must be 
- scaled to the size of the whole reality, which is =P(B)=.
+Thus, the probability of the intersection =P(A, B)= (read A *and* B) must be 
+scaled to the size of the whole reality, which is =P(B)=.
 
- TODO A picture would be nice.
+TODO A picture would be nice.
 
-**** [[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=35][Bayes Rule]]
- #+BEGIN_SRC
-    P(A|B) * P(B) = P(B|A) * P(A) 
- #+END_SRC
+*** [[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=35][Bayes Rule]]
+#+BEGIN_SRC
+   P(A|B) * P(B) = P(B|A) * P(A) 
+#+END_SRC
 
- Note: There's an /alpha/ trick
+Note: There's an /alpha/ trick
 
-**** [[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=37][Chain rule]]
+
+
+*** [[file:ai_materials/slides/midterm2/bayesian-slides.pdf#page=37][Chain rule]]
 
  The goal is to compute *joint probabilites* using *conditional probabilities*
 
@@ -77,13 +75,13 @@
 
  #+END_SRC
 
- Test equation
- OBS abletonlive
+> *IMPORTANT NOTE* This is a simplfication:
+=P ( A | B ) * P ( B ) = P ( A, B )= /by definition/
 
 
-*** Reasoning
+** Reasoning
 
-**** Inference
+*** Inference
 > *Goal*: given evidence, compute probability of events
 
 Inference tasks                                                  
@@ -112,7 +110,7 @@ Uses *Naïve Bayes*, which is =argmax P(Class=c | o)=.
 
 > *Ex*: probability of illness given result of analysis ( or symptoms )
 
-**** Independence
+*** Independence
 =A= and =B= are *independent* iff =P(A, B) = P(A) * P(B)=
 
 Which implies that =P(A | B) = P(A)=
@@ -122,10 +120,131 @@ Which implies that =P(A | B) = P(A)=
 
 Further references: /AI: A Modern Approach/ by Norvig
 
-** Bayesian networks
+* Bayesian networks
+
+** [[file:ai_materials/slides/midterm2/bayesian-networks-slides.pdf#page=8][Conditional Independence]]
+   =A= and =B= are *conditionally independent* /given/ =C= iff:
+   #+BEGIN_SRC
+   P ( A | B, C ) = P ( A | C ) 
+   #+END_SRC
+    
+   Equivalently:
+   #+BEGIN_SRC
+   P ( A, B | C ) = P ( A | C ) * P ( B | C)
+   #+END_SRC
+
+   Conditional independence helps reduce the number of parameters
+
+   In a graph, any two nodes not connected by an edge are conditionally independent
+
+** [[file:ai_materials/slides/midterm2/bayesian-networks-slides.pdf#page=14][Definition of a Bayesian Network]]
+    - A set of *nodes* representing random variables
+    - A set of *edges* X -> Y means Y depends on X
+    - There are /no cycles/
+
+Every node has a *Conditional Probability Table (CPT)* that defines the effects of its parents
+
+~P ( Node | Parents ( Node ) )**
+
+#+BEGIN_SRC
+
+P ( X1, X2, ..., Xn ) = PRODUCT { P ( Xn | X1, X2, ..., Xn-1 ) }
+                      = PRODUCT { P ( Xn | Parents ( Xn )    ) }
+
+#+END_SRC
+
+** Solving Bayesian Networks
+    
+*** Problem
+Given a Bayesian network, with the corresponding /Conditional Probability Tables/, 
+and a desired *query* usually of the form =P ( A, B | C )=, compute the 
+
+* Markov Models
+
+We want to add the notions of *time* and *actions*.
+
+The various approaches are categorize by whether they include actions or not,
+and by whether the model presumes global knowledge or not.
+
+| actions | full observability            | partial observability     |
+|---------+-------------------------------+---------------------------|
+| no      | Markov Chains                 | Hidden Markov Model (HMM) |
+| yes     | Markov Decision Process (MDP) | POMDP (SLAM)              |
+
+** Markov Chains
+
+Time dependent chain-structured bayesian network. Can predict into the future by 
+reapplying the transition rule.
+
+1. Define /a priori/ =P (X0)=
+
+2. Define =P ( Xn | Xn-1 )=  = /Transition probability/
+
+> *Markov Property*: The past and future are independent given the present.
+
+TODO example Markov Chain problem with notation.
+
+** Hidden Markov Model (HMM)
+
+The Hidden Markov Model introduces /partial observations/, such as the 
+current sensor readings of a robot.
+
+> TODO this one is 3 points on the exam!
+
+> *Independence Properties*:
+> - Markov property
+> - the current observation is independent of everything else given the current state
+
+TODO [[file:ai_materials/slides/midterm2/mdp-slides.pdf#page=27][Examples of HMM]]
+
+** Markov Decision Processes (MDP)
+
+- In HMM, passively observed/localized the robot. In MDP, we choose actions.
+
+- We must select actions to /maximize reward over time/.
+
+- Decisions are based on /full observations/ (complete state is known)
+
+*** Definition
+*MDP*: /=< S, A, T, R >=/
+  - S: set of states
+  - A: set of actions
+  - T: set of transitions: =T(s, a, s') = P( s' | s, a )=
+  - R: reward function (or cost function) = =R(s, a)=
 
 
-** Markov Models
-*** MDP
-[[https://aulaglobal.uc3m.es/mod/url/view.php?id=1625904][Videos on MDP]]
+*** Policies
+Task: choose a sequence of actions, not just one action.
+
+> A *policy* is a probabilistic plan that maps *states* to *actions* that have
+an uncertain effect.
+
+
+*** Cost Models
+- *Deterministic*:  =c(a) + costToEnter(s')=
+- *Stochastic*: =c(a) + ∑P(s' | s, a) x costToEnter(s')= over all possible states reached by this action
+
+*** Expected Value of a State
+We define *=V(s)=* to be the expected cost to get to the goal from /s/. (/Read *heuristic*/)
+
+If we know =V(s)=, we can compute the optimal policy.
+*** [[file:ai_materials/slides/midterm2/mdp-slides.pdf#page=62][Bellman Equation (Deterministic)]]
+  - =V(goal) = 0=
+  - =V(s) = min_a [ c(a) + V(s') ]=
+
+*** [[file:ai_materials/slides/midterm2/mdp-slides.pdf#page=67][Bellman Equation (For MDPs)]]
+  - =V(goal) = 0=
+  - =V(s) = min_a [ c(a) + ∑_s' P(s' | s, a) * V(s') ]=
+
+*** Optimal Policy
+  - =π* (s) = argmin_a [ c(a) + ∑_s' P(s' | s, a) * V(s') ]=
+
+    [[https://aulaglobal.uc3m.es/mod/url/view.php?id=1625904][Videos on MDP]]
+
+
+** Examples
+
+*** Bayesian Networks
+    - [[file:ai_materials/slides/midterm2/bayesian-networks-slides.pdf#page=16][Example of an alarm]]
+    - [[file:ai_materials/slides/midterm2/bayesian-networks-slides.pdf#page=32][Example of an alarm continued]]
 
