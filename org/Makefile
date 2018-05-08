@@ -7,6 +7,7 @@ FILES=$(patsubst %.org,$(OUT_DIR)/%.md,$(wildcard *.org))
 all: install-doc
 
 install-doc: $(OUT_DIR) $(FILES)
+	cp $(OUT_DIR)/README.md $(OUT_DIR)/index.md
 #	bundle exec jekyll build --source $(OUT_DIR) --destination $(OUT_DIR)/_site
 	#bundle exec jekyll serve --source $(OUT_DIR) #--destination $(OUT_DIR)/_site
 
