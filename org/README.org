@@ -1,5 +1,4 @@
 #+TITLE: Study Guides
-#+OPTIONS: toc:nil
 #+BEGIN_HTML
   ---
   title: UC3M Study Guides
