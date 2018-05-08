@@ -1,12 +1,10 @@
 #+MACRO: pdf      <object data="{{ $1 | absulute_url }}" type="application/pdf" width="700px" height="525px"> <embed src="{{  $1 | absulute_url }}"> This browser does not support PDFs. Please download the PDF to view it: <a href="{{ $1 | absolute_url}}">Download PDF</a>.</p>  </embed> </object>
-#+OPTIONS: toc:nil
 #+begin_html
   ---
   title: Distributed Systems Study Guide
   comment: Exam will be on May 30
   ---
 #+end_html
-#+TOC: headlines 10
 
 * Synchronization and Communication
   A *Distributed system* consists of physically distributed 
@@ -39,23 +37,23 @@
 
    {{{pdf('dsmaterials/slides/Unit 2a - Synchronization and Communication.pdf#page=9')}}}
 
-** Synchonization mechanisms
-** Communication mechanisms
-** POSIX
-* Message Passing
+** COMMENT Synchonization mechanisms
+** COMMENT Communication mechanisms
+** COMMENT POSIX
+* COMMENT Message Passing
   
-* Client Server paradigm
+* COMMENT Client Server paradigm
 
-* Communication with sockets
+* COMMENT Communication with sockets
 
-* Distributed coordination
+* COMMENT Distributed coordination
 
-* Remote Procedure Calls
+* COMMENT Remote Procedure Calls
 
-* SUN RPCs
+* COMMENT SUN RPCs
 
-* Web services and gSOAP
+* COMMENT Web services and gSOAP
 
-* Distributed file systems
+* COMMENT Distributed file systems
 
-* Fault Tolerance
+* COMMENT Fault Tolerance

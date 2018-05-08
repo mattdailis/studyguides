@@ -16,6 +16,7 @@ $(OUT_DIR):
 
 %.md: %.org
 	emacs --batch --visit $< -f org-md-export-to-markdown --kill
+	python front_matter.py $@
 	# mv $@ temp
 	# touch $@
 	# echo "---" >> $@
