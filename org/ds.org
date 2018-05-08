@@ -1,0 +1,61 @@
+#+MACRO: pdf      <object data="{{ $1 | absulute_url }}" type="application/pdf" width="700px" height="525px"> <embed src="{{  $1 | absulute_url }}"> This browser does not support PDFs. Please download the PDF to view it: <a href="{{ $1 | absolute_url}}">Download PDF</a>.</p>  </embed> </object>
+#+OPTIONS: toc:nil
+#+begin_html
+  ---
+  title: Distributed Systems Study Guide
+  comment: Exam will be on May 30
+  ---
+#+end_html
+#+TOC: headlines 10
+
+* Synchronization and Communication
+  A *Distributed system* consists of physically distributed 
+  resources (hardware and software) which are connected via 
+  a network and are able to collaborate to accomplish a given
+  task.
+** Processes and threads
+   A process can consist of one execution flow (monothread) or 
+   more (multithread).
+
+   Each thread has its own:
+   - Program counter / Registers
+   - Stack
+   - Status (executing, ready, blocked)
+
+   Threads of the same process share:
+   - a memory space.
+   - global variables
+   - open files
+   - child processes
+   - timers
+   - signals and semaphores
+   - statistics
+
+** Concurrency
+   Separate a step of the program that can be modularized and run
+   parallel and independent from the others.
+
+   When one is blocked, the others can continue executing.
+
+   {{{pdf('dsmaterials/slides/Unit 2a - Synchronization and Communication.pdf#page=9')}}}
+
+** Synchonization mechanisms
+** Communication mechanisms
+** POSIX
+* Message Passing
+  
+* Client Server paradigm
+
+* Communication with sockets
+
+* Distributed coordination
+
+* Remote Procedure Calls
+
+* SUN RPCs
+
+* Web services and gSOAP
+
+* Distributed file systems
+
+* Fault Tolerance
