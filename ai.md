@@ -55,6 +55,7 @@
 </li>
 </ul>
 </li>
+<li><a href="#sec-5">5. Fuzzy Logic</a></li>
 </ul>
 </div>
 </div>
@@ -330,3 +331,5 @@ If we know `V(s)`, we can compute the optimal policy.
 
 -   [Example of an alarm](ai_materials/slides/midterm2/bayesian-networks-slides.pdf#page=16)
 -   [Example of an alarm continued](ai_materials/slides/midterm2/bayesian-networks-slides.pdf#page=32)
+
+# Fuzzy Logic<a id="sec-5" name="sec-5"></a>

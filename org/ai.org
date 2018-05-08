@@ -195,6 +195,8 @@ current sensor readings of a robot.
 > - Markov property
 > - the current observation is independent of everything else given the current state
 
+
+
 TODO [[file:ai_materials/slides/midterm2/mdp-slides.pdf#page=27][Examples of HMM]]
 
 ** Markov Decision Processes (MDP)
@@ -248,3 +250,4 @@ If we know =V(s)=, we can compute the optimal policy.
     - [[file:ai_materials/slides/midterm2/bayesian-networks-slides.pdf#page=16][Example of an alarm]]
     - [[file:ai_materials/slides/midterm2/bayesian-networks-slides.pdf#page=32][Example of an alarm continued]]
 
+* Fuzzy Logic

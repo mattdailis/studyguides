@@ -7,11 +7,15 @@
 </div>
 </div>
 
+---
+title: UC3M Study Guides
+---
+
 These are my study materials for my classes at UC3M, Spring 2018.
 
-[OS notes](os.md)
-
-[AI notes](ai.md)
+-   [OS notes](os.md)
+-   [AI notes](ai.md)
+-   [DS notes](ds.md)
 
 # Exam Dates<a id="sec-1" name="sec-1"></a>
 
@@ -40,12 +44,6 @@ These are my study materials for my classes at UC3M, Spring 2018.
 <tr>
 <td class="left">Artificial intelligence</td>
 <td class="left">May 29</td>
-</tr>
-
-
-<tr>
-<td class="left">Software Dev</td>
-<td class="left">May 30</td>
 </tr>
 
 
