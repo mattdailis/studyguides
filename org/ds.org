@@ -1,4 +1,4 @@
-#+MACRO: pdf      <object data="{{ $1 | absulute_url }}" type="application/pdf" width="700px" height="525px"> <embed src="{{  $1 | absulute_url }}"> <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{ $1 | absolute_url}}">Download PDF</a>.</p>  </embed> </object>
+#+INCLUDE: macros.setup
 #+begin_html
   ---
   title: Distributed Systems Study Guide
