@@ -51,4 +51,4 @@ parallel and independent from the others.
 
 When one is blocked, the others can continue executing.
 
-<object data="{{ 'dsmaterials/slides/Unit 2a - Synchronization and Communication.pdf#page=9' | absulute<sub>url</sub> }}" type="application/pdf" width="700px" height="525px"> <embed src="{{  'dsmaterials/slides/Unit 2a - Synchronization and Communication.pdf#page=9' | absulute<sub>url</sub> }}"> This browser does not support PDFs. Please download the PDF to view it: <a href="{{ 'dsmaterials/slides/Unit 2a - Synchronization and Communication.pdf#page=9' | absolute<sub>url</sub>}}">Download PDF</a>.</p>  </embed> </object>
+<object data="{{ 'dsmaterials/slides/Unit 2a - Synchronization and Communication.pdf#page=9' | absulute<sub>url</sub> }}" type="application/pdf" width="700px" height="525px"> <embed src="{{  'dsmaterials/slides/Unit 2a - Synchronization and Communication.pdf#page=9' | absulute<sub>url</sub> }}"> <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{ 'dsmaterials/slides/Unit 2a - Synchronization and Communication.pdf#page=9' | absolute<sub>url</sub>}}">Download PDF</a>.</p>  </embed> </object>
